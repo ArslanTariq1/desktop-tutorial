@@ -1,9 +1,11 @@
-
-node {
+pipeline {
+    agent any
+    stages {
         stage('build') {
             steps {
                 sh 'node --version'
-                // git pull origin dev
+                echo 'First build'
             }
         }
+    }
 }
