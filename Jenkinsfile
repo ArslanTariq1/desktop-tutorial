@@ -12,7 +12,7 @@
 
 node{
     stage('build'){
-          sh 'node --version'
+          
           echo 'First build'
     }
 }
